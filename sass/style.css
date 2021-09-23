@@ -1,0 +1,62 @@
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+
+@media all and (max-width: 1025px) {
+  #main_wrapper {
+    color: black;
+  }
+
+  /* ---DESCRIPTION--- */
+  .nav__link {
+    list-style: none;
+  }
+
+  .header {
+    font-size: 1.3rem;
+  }
+  .header .header__logo {
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+  }
+  .header .header__searchbar {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: #eaeaea;
+    background-size: cover;
+    box-shadow: inset 0px 5px 10px -8px #000000b3;
+  }
+  .header .map {
+    margin: 1rem 1rem 1rem 4.5rem;
+    justify-self: center;
+    align-self: center;
+    color: #353535;
+  }
+  .header .header__searchbar p {
+    justify-items: start;
+    font-weight: 500;
+  }
+
+  /* ---LEGENDE--- */
+  .header__legend {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f6f6f6;
+  }
+  .header__legend h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 0 1rem 0 1rem;
+  }
+  .header__legend p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .header__legend .explore__btn {
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

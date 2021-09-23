@@ -7,20 +7,46 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Ohmyfood! Paris</title>
     <script src="https://kit.fontawesome.com/6d8783b77e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/style.css">
+    <!--POLICE-->
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="main_wrapper">
+        <!--HEADER-->
         <header>
-            <section class="header__description">
-                <img src="img/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
+            <!--DESCRIPTION-->
+            <section class="header">
+                <div class="header__logo">
+                    <img src="img/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
+                </div>
                 <div class="header__searchbar">
-                    <p><span class="map"><i class="fas fa-map-marker-alt"></i></span>Paris, Belleville</p>
+                    <span class="map"><i class="fas fa-map-marker-alt"></i></span>
+                    <p>Paris, Belleville</p>
                 </div>
+
+                <!--LEGENDE-->
                 <div class="header__legend">
-                    <h1>Reservez le menu qui vous convient</h1>
+                    <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+                    <button class="explore__btn">Explorer nos restaurants</button>
                 </div>
+
+                <!--FONCTIONNEMENT-->
+                <nav class="nav">
+                    <h1>Fonctionnement</h1>
+                    <ul>
+                        <li class="nav__link"><a href="#">1 <i class="fas fa-mobile-alt"></i> Choisissez un
+                                restaurant</a></li>
+                        <li class="nav__link"><a href="#">2 <i class="fas fa-list"></i> Composez votre menu</a></li>
+                        <li class="nav__link"><a href="#">3 <i class="fas fa-store"></i> Dégustez au restaurant</a></li>
+                    </ul>
+                </nav>
             </section>
         </header>
     </div>
