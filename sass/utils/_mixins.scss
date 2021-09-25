@@ -1,0 +1,14 @@
+@mixin gradientcolor {
+  background: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
+}
+
+@mixin btn-hover {
+  background: linear-gradient(
+    0deg,
+    lighten($primarycolor, 5),
+    lighten($secondarycolor, 5)
+  );
+  box-shadow: 0px 3px 6px 2px darken($bs-color, 20%);
+  border-style: none;
+  transform: scale(1.1);
+}
