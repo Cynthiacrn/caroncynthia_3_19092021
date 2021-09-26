@@ -1,0 +1,113 @@
+#main_wrapper {
+  color: black;
+}
+
+/* ---DESCRIPTION--- */
+
+.header {
+  font-size: 1.3rem;
+
+  &__logo {
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+  }
+
+  &__searchbar {
+    display: grid;
+    grid-template-columns: 0.95fr 1fr;
+    background-color: $bg-color;
+    background-size: cover;
+    box-shadow: inset 0px 5px 10px -8px #000000b3;
+  }
+  .map {
+    margin: 1rem 5rem 1rem 5rem;
+    justify-self: end;
+    align-self: center;
+    color: #353535;
+  }
+  &__searchbar p {
+    justify-items: start;
+    font-weight: 300;
+  }
+}
+
+/* ---LEGENDE--- */
+
+.header__legend {
+  text-align: center;
+  padding: $generalpadding;
+  background-color: #f6f6f6;
+
+  h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #0000009e;
+    padding-bottom: 1rem;
+  }
+
+  .explore__btn {
+    @include gradientcolor;
+    color: white;
+    border-style: none;
+    box-shadow: 0px 4px 12px $bs-color;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+      @include btn-hover;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header__searchbar {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    .map {
+      margin: 1rem 1.2rem 1rem 1rem;
+    }
+  }
+}
+
+/* ---FONCTIONNEMENT--- */
+
+.functioning {
+  display: grid;
+  padding: $generalpadding;
+  &__allsteps {
+    display: grid;
+    padding: 1rem 1.5rem 1rem 2.5rem;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  &__step {
+    display: flex;
+    justify-content: flex-start;
+    background-color: $bg-color;
+    border-radius: 1.4rem;
+    padding: 1.4rem;
+    align-items: center;
+  }
+  &__number {
+    background-color: $primarycolor;
+    border-radius: 1rem;
+    padding: 0.2rem 0.6rem;
+    position: relative;
+    right: 1.8rem;
+    color: white;
+  }
+  &__legend {
+    padding-left: 1rem;
+  }
+}
