@@ -2,7 +2,7 @@
   background: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
 }
 
-@mixin btn-hover {
+@mixin btn-hover($scale) {
   background: linear-gradient(
     0deg,
     lighten($primarycolor, 5),
@@ -10,5 +10,17 @@
   );
   box-shadow: 0px 3px 6px 2px darken($bs-color, 20%);
   border-style: none;
-  transform: scale(1.1);
+  transform: $scale;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin functioning-hover {
+  background-color: lighten($primarycolor, 35);
+  .functioning__allsteps__list__icon {
+    color: $primarycolor;
+    transform: scale(1.2);
+  }
 }

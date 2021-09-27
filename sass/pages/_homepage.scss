@@ -16,7 +16,7 @@
   &__searchbar {
     display: grid;
     grid-template-columns: 0.95fr 1fr;
-    background-color: $bg-color;
+    background-color: #e4e4e4;
     background-size: cover;
     box-shadow: inset 0px 5px 10px -8px #000000b3;
   }
@@ -24,7 +24,7 @@
     margin: 1rem 5rem 1rem 5rem;
     justify-self: end;
     align-self: center;
-    color: #353535;
+    color: $icons-color;
   }
   &__searchbar p {
     justify-items: start;
@@ -54,9 +54,9 @@
 
   .explore__btn {
     @include gradientcolor;
+    @include box-shadow(0px 8px 12px $bs-color);
     color: white;
     border-style: none;
-    box-shadow: 0px 4px 12px $bs-color;
     border-radius: 2rem;
     padding: 1rem;
     font-size: 1.1rem;
@@ -64,17 +64,7 @@
     transition-property: transform;
     transition-duration: 400ms;
     &:hover {
-      @include btn-hover;
-    }
-  }
-}
-
-@media all and (max-width: 600px) {
-  .header__searchbar {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    .map {
-      margin: 1rem 1.2rem 1rem 1rem;
+      @include btn-hover(scale(1.1));
     }
   }
 }
@@ -84,30 +74,48 @@
 .functioning {
   display: grid;
   padding: $generalpadding;
+  h2 {
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+  }
   &__allsteps {
     display: grid;
-    padding: 1rem 1.5rem 1rem 2.5rem;
-    gap: 1rem;
+    padding: 0 0 0 1rem;
+    gap: 2rem;
     list-style: none;
-    font-size: 1.2rem;
-  }
-  &__step {
-    display: flex;
-    justify-content: flex-start;
-    background-color: $bg-color;
-    border-radius: 1.4rem;
-    padding: 1.4rem;
-    align-items: center;
-  }
-  &__number {
-    background-color: $primarycolor;
-    border-radius: 1rem;
-    padding: 0.2rem 0.6rem;
-    position: relative;
-    right: 1.8rem;
-    color: white;
-  }
-  &__legend {
-    padding-left: 1rem;
+    font-size: 1.1rem;
+
+    &__list {
+      display: flex;
+      background-color: $bg-color;
+      border-radius: 1.4rem;
+      padding: 1.4rem 1.4rem 1.4rem 1rem;
+      align-items: center;
+      @include box-shadow(0px 6px 12px $bs-color);
+      transition: background-color 450ms;
+      transition-delay: 150ms;
+
+      &:hover {
+        @include functioning-hover;
+      }
+      &__number {
+        background-color: $primarycolor;
+        border-radius: 1rem;
+        padding: 0.2rem 0.5rem;
+        position: relative;
+        right: 1.9rem;
+        color: white;
+      }
+      &__icon {
+        display: flex;
+        font-size: 1.2rem;
+        color: $icons-color;
+        transition: transform 450ms;
+      }
+      &__legend {
+        display: flex;
+        padding-left: 1rem;
+      }
+    }
   }
 }
