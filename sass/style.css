@@ -1,17 +1,13 @@
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .functioning__allsteps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
   }
-}
-@media all and (max-width: 600px) {
-  .header__searchbar {
+
+  .header .header__searchbar {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-  }
-  .header__searchbar .map {
-    margin: 1rem 1.2rem 1rem 1rem;
+    grid-template-columns: 0.9fr 1fr;
   }
 }
 body {
@@ -34,13 +30,13 @@ body {
 }
 .header__searchbar {
   display: grid;
-  grid-template-columns: 0.95fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   background-color: #e4e4e4;
   background-size: cover;
   box-shadow: inset 0px 5px 10px -8px #000000b3;
 }
 .header .map {
-  margin: 1rem 5rem 1rem 5rem;
+  margin: 1rem 2rem 1rem 5.5rem;
   justify-self: end;
   align-self: center;
   color: #656363;
@@ -48,6 +44,7 @@ body {
 .header__searchbar p {
   justify-items: start;
   font-weight: 300;
+  font-size: 1.2rem;
 }
 
 /* ---LEGENDE--- */
@@ -110,10 +107,10 @@ body {
   align-items: center;
   box-shadow: 0px 6px 12px #adababa6;
   transition: background-color 450ms;
-  transition-delay: 150ms;
+  transition-delay: 130ms;
 }
 .functioning__allsteps__list:hover {
-  background-color: #f2eafb;
+  background-color: #ece1f9;
 }
 .functioning__allsteps__list:hover .functioning__allsteps__list__icon {
   color: #9356dc;

@@ -18,7 +18,7 @@
 }
 
 @mixin functioning-hover {
-  background-color: lighten($primarycolor, 35);
+  background-color: lighten($primarycolor, 33);
   .functioning__allsteps__list__icon {
     color: $primarycolor;
     transform: scale(1.2);

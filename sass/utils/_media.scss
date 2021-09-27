@@ -1,17 +1,11 @@
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .functioning__allsteps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
   }
-}
-
-@media all and (max-width: 600px) {
-  .header__searchbar {
+  .header .header__searchbar {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    .map {
-      margin: 1rem 1.2rem 1rem 1rem;
-    }
+    grid-template-columns: 0.9fr 1fr;
   }
 }
