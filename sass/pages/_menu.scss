@@ -1,0 +1,54 @@
+.headermenu {
+  display: flex;
+  flex-direction: row;
+  font-family: "Shrikhand", sans-serif;
+  &__back {
+    text-decoration: none;
+    color: $icons-color;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    font-size: 1.8rem;
+  }
+  &__logo {
+    justify-content: center;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.restaurantmenu {
+  &__img {
+    img {
+      max-height: 450px;
+      width: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+  }
+
+  &__bloc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background-color: $bg-color;
+    margin-top: -2.5rem;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-size: 1.8rem;
+        align-items: center;
+        margin: 0;
+      }
+      &__heart {
+        font-size: 1.6rem;
+        padding: 0.3rem 1rem 0 0;
+      }
+    }
+  }
+}

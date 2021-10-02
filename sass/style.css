@@ -229,4 +229,54 @@ body {
   display: flex;
   justify-content: start;
   gap: 0.5rem;
+}
+
+.headermenu {
+  display: flex;
+  flex-direction: row;
+  font-family: "Shrikhand", sans-serif;
+}
+.headermenu__back {
+  text-decoration: none;
+  color: #656363;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  font-size: 1.8rem;
+}
+.headermenu__logo {
+  justify-content: center;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.restaurantmenu__img img {
+  max-height: 450px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.restaurantmenu__bloc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background-color: #f6f6f6;
+  margin-top: -2.5rem;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+.restaurantmenu__bloc__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.restaurantmenu__bloc__header h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8rem;
+  align-items: center;
+  margin: 0;
+}
+.restaurantmenu__bloc__header__heart {
+  font-size: 1.6rem;
+  padding: 0.3rem 1rem 0 0;
 }/*# sourceMappingURL=style.css.map */
