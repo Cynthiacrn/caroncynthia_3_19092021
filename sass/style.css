@@ -265,6 +265,24 @@ body {
   border-radius: 2rem 2rem 0 0;
   padding: 1.5rem 1rem 1.5rem 1rem;
 }
+.restaurantmenu__bloc__btn {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 0px 8px 12px #adababa6;
+  color: white;
+  border-style: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.restaurantmenu__bloc__btn:hover {
+  background: linear-gradient(0deg, #a16be0, #ff93e1);
+  box-shadow: 0px 3px 6px 2px rgba(122, 120, 120, 0.6509803922);
+  border-style: none;
+  transform: scale(1.1);
+}
 .restaurantmenu__bloc__header {
   display: flex;
   justify-content: space-between;
@@ -279,4 +297,43 @@ body {
 .restaurantmenu__bloc__header__heart {
   font-size: 1.6rem;
   padding: 0.3rem 1rem 0 0;
+}
+.restaurantmenu__bloc__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.restaurantmenu__bloc__menu h3 {
+  margin: 2rem 0 0 0;
+  text-transform: uppercase;
+  -webkit-text-decoration: 4px underline #99e2d0;
+          text-decoration: 4px underline #99e2d0;
+  font-weight: 100;
+}
+.restaurantmenu__bloc__menu__info {
+  background-color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 0px 8px 12px #adababa6;
+  padding: 0.8rem;
+}
+.restaurantmenu__bloc__menu__info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.restaurantmenu__bloc__menu__info__legende {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.restaurantmenu__bloc__menu__info__legende p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 200;
+  margin: 0.5rem 0 0 0;
+}
+.restaurantmenu__bloc__menu__info__legende span {
+  margin: 0.5rem 0 0 0;
 }/*# sourceMappingURL=style.css.map */

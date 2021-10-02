@@ -34,6 +34,23 @@
     margin-top: -2.5rem;
     border-radius: 2rem 2rem 0 0;
     padding: 1.5rem 1rem 1.5rem 1rem;
+
+    &__btn {
+      @include gradientcolor;
+      @include box-shadow(0px 8px 12px $bs-color);
+      color: white;
+      border-style: none;
+      border-radius: 2rem;
+      padding: 1rem;
+      font-size: 1.1rem;
+      transform: scale(1);
+      transition-property: transform;
+      transition-duration: 400ms;
+      &:hover {
+        @include btn-hover(scale(1.1));
+      }
+    }
+
     &__header {
       display: flex;
       justify-content: space-between;
@@ -48,6 +65,42 @@
       &__heart {
         font-size: 1.6rem;
         padding: 0.3rem 1rem 0 0;
+      }
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h3 {
+        margin: 2rem 0 0 0;
+        text-transform: uppercase;
+        text-decoration: 4px underline $tertiarycolor;
+        font-weight: 100;
+      }
+      &__info {
+        @include bg-cards;
+        padding: 0.8rem;
+        h4 {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+        &__legende {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 0.9rem;
+          p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: 200;
+            margin: 0.5rem 0 0 0;
+          }
+          span {
+            margin: 0.5rem 0 0 0;
+          }
+        }
       }
     }
   }
