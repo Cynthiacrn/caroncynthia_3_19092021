@@ -266,18 +266,23 @@ body {
   padding: 1.5rem 1rem 1.5rem 1rem;
 }
 .restaurantmenu__bloc__btn {
+  display: flex;
+  justify-content: center;
+}
+.restaurantmenu__bloc__btn__commande {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   box-shadow: 0px 8px 12px #adababa6;
   color: white;
   border-style: none;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 0.7rem 2rem;
+  margin: 2rem;
   font-size: 1.1rem;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 400ms;
 }
-.restaurantmenu__bloc__btn:hover {
+.restaurantmenu__bloc__btn__commande:hover {
   background: linear-gradient(0deg, #a16be0, #ff93e1);
   box-shadow: 0px 3px 6px 2px rgba(122, 120, 120, 0.6509803922);
   border-style: none;
@@ -336,4 +341,33 @@ body {
 }
 .restaurantmenu__bloc__menu__info__legende span {
   margin: 0.5rem 0 0 0;
+}
+
+/* ---FOOTER--- */
+.footer {
+  background-color: #2d2c2c;
+  padding: 1rem 1rem 1rem 2rem;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.footer__list {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0;
+}
+.footer__listitem {
+  color: white;
+  list-style: none;
+}
+.footer__listitem a {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
