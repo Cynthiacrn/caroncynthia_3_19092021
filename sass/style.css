@@ -11,7 +11,14 @@
   }
 
   main .card__description__heart {
-    margin: 1rem 1rem 0 30rem;
+    justify-self: flex-end;
+    margin: 1.5rem 1.5rem 0 0;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 body {
@@ -231,6 +238,7 @@ body {
   gap: 0.5rem;
 }
 
+/* ---HEADER--- */
 .headermenu {
   display: flex;
   flex-direction: row;
@@ -248,8 +256,9 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* ---MAIN--- */
 .restaurantmenu__img img {
-  max-height: 450px;
+  max-height: 250px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

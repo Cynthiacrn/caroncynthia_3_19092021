@@ -8,7 +8,16 @@
     display: grid;
     grid-template-columns: 0.85fr 1fr;
   }
+
   main .card__description__heart {
-    margin: 1rem 1rem 0 30rem;
+    justify-self: flex-end;
+    margin: 1.5rem 1.5rem 0 0;
+  }
+  .footer {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
 }
