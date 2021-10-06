@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Durée*/
 @media only screen and (min-width: 768px) {
   .functioning__allsteps {
     display: grid;
@@ -21,6 +23,65 @@
     justify-content: space-evenly;
   }
 }
+@-webkit-keyframes menuslide {
+  0% {
+    transform: translateY(0);
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80%, 100% {
+    transform: translateY(-50px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes menuslide {
+  0% {
+    transform: translateY(0);
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80%, 100% {
+    transform: translateY(-50px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.restaurantmenu__bloc__menu {
+  -webkit-animation: menuslide 1s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  animation: menuslide 1s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+}
+.restaurantmenu__bloc__menu h3 {
+  -webkit-animation: menuslide 1s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  animation: menuslide 1s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+}
+.restaurantmenu__bloc__menu__info {
+  -webkit-animation: menuslide 1s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  animation: menuslide 1s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+}
+.restaurantmenu__bloc__menu__info:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.restaurantmenu__bloc__menu__info:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.restaurantmenu__bloc__menu__info:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.restaurantmenu__bloc__menu__info:nth-child(5) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
 body {
   font-family: "roboto", sans-serif;
   margin: 0;
@@ -318,11 +379,19 @@ body {
   gap: 1rem;
 }
 .restaurantmenu__bloc__menu h3 {
-  margin: 2rem 0 0 0;
+  position: relative;
+  margin: 2rem 0 0.5rem 0;
   text-transform: uppercase;
-  -webkit-text-decoration: 4px underline #99e2d0;
-          text-decoration: 4px underline #99e2d0;
   font-weight: 100;
+}
+.restaurantmenu__bloc__menu h3::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  background-color: #99e2d0;
+  bottom: -15px;
+  margin-bottom: 0.5rem;
 }
 .restaurantmenu__bloc__menu__info {
   background-color: white;
@@ -345,7 +414,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0.5rem 0 0 0;
 }
 .restaurantmenu__bloc__menu__info__legende span {

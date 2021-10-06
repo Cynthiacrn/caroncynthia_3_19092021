@@ -1,0 +1,47 @@
+@keyframes menuslide {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80%,
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.restaurantmenu__bloc__menu {
+  -webkit-animation: menuslide $animation-ms
+    cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  animation: menuslide $animation-ms cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  h3 {
+    -webkit-animation: menuslide $animation-ms
+      cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+    animation: menuslide $animation-ms cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  }
+  &__info {
+    -webkit-animation: menuslide $animation-ms
+      cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+    animation: menuslide $animation-ms cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+
+    &:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.8s;
+    }
+    &:nth-child(4) {
+      animation-delay: 1s;
+    }
+    &:nth-child(5) {
+      animation-delay: 1.4s;
+    }
+  }
+}
