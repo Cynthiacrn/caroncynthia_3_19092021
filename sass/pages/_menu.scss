@@ -69,10 +69,9 @@
         align-items: center;
         margin: 0;
       }
-      &__heart {
-        font-size: 1.6rem;
-        padding: 0.3rem 1rem 0 0;
-      }
+    }
+    #heart > .far {
+      background-color: $bg-color;
     }
     &__menu {
       display: flex;
@@ -95,26 +94,76 @@
       }
       &__info {
         @include bg-cards;
-        padding: 0.8rem;
-        h4 {
-          margin: 0;
-          font-size: 1.1rem;
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        &:hover .icone {
+          margin-right: 0;
+          transition-duration: 0.5s;
+          transition-timing-function: ease;
         }
-        &__legende {
+        &:hover i {
+          transform: rotate(360deg);
+          transition-duration: 0.5s;
+        }
+        &__description {
+          width: 100%;
           display: flex;
-          flex-wrap: nowrap;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 0.9rem;
+          max-width: 100%;
+          overflow: hidden;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          cursor: pointer;
+          h4 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin: 0.8rem;
+            font-weight: 400;
+          }
           p {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            margin: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 300;
-            margin: 0.5rem 0 0 0;
           }
-          span {
-            margin: 0.5rem 0 0 0;
+          &__texte {
+            width: 100%;
+            margin-left: 1rem;
+            max-width: 100%;
+            overflow: hidden;
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin: 0;
+          }
+          &__Price {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 0.8rem;
+            margin-right: 0.8rem;
+            max-width: 100%;
+          }
+        }
+        .icone {
+          width: 7rem;
+          background-color: $tertiarycolor;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: -7rem;
+          transition-duration: 0.5s;
+          transition-timing-function: ease;
+          i {
+            color: $tertiarycolor;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background-color: white;
+            transition-duration: 0.5s;
           }
         }
       }

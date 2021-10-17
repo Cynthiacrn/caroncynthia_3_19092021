@@ -1,5 +1,40 @@
 #main_wrapper {
   color: black;
+  background-color: white;
+}
+/*--LOADING SPINNER--*/
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c2c2c296;
+  animation: BGloading 0s linear both 3s;
+  z-index: 1;
+  &__spinner {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    &::before {
+      content: "";
+      @include loader;
+      animation: grow 2.5s linear 0.25s both;
+    }
+    &::after {
+      content: "";
+      @include loader;
+      background-color: $tertiarycolor;
+      animation: grow 2.5s linear 0.74s both;
+    }
+    span {
+      content: "";
+      @include loader;
+      background-color: $secondarycolor;
+      animation: grow 2.5s linear 0.5s both;
+    }
+  }
 }
 
 /* ---DESCRIPTION--- */
@@ -176,6 +211,7 @@
   position: absolute;
   right: 2rem;
   margin-top: 1rem;
+  margin-right: 0.5rem;
   @include card-new;
 }
 
