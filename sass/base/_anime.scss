@@ -82,7 +82,7 @@
 
 /*--HEART--*/
 
-#heart {
+.heart {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -111,11 +111,11 @@ input {
   cursor: pointer;
   z-index: 3;
 }
-input:checked ~ .far {
+.far:hover {
   opacity: 0;
   transition-duration: 0.5s;
 }
-input:checked ~ .fas {
+.fas:hover {
   opacity: 1;
   transition-duration: 0.5s;
 }

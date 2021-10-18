@@ -70,8 +70,9 @@
         margin: 0;
       }
     }
-    #heart > .far {
+    .heart > .far {
       background-color: $bg-color;
+      cursor: pointer;
     }
     &__menu {
       display: flex;
@@ -98,6 +99,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
+        cursor: pointer;
         &:hover .icone {
           margin-right: 0;
           transition-duration: 0.5s;
