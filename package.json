@@ -1,0 +1,23 @@
+{
+  "name": "caroncynthia_3_19092021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.43.3"
+  },
+  "scripts": {
+    "sass" : "sass --watch ./sass/style.scss:./sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cynthiacrn/caroncynthia_3_19092021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cynthiacrn/caroncynthia_3_19092021/issues"
+  },
+  "homepage": "https://github.com/Cynthiacrn/caroncynthia_3_19092021#readme"
+}

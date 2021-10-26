@@ -103,14 +103,6 @@
     z-index: 2;
   }
 }
-input {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 3;
-}
 .far:hover {
   opacity: 0;
   transition-duration: 0.5s;
